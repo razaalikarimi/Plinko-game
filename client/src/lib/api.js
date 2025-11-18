@@ -1,4 +1,4 @@
-const devFallback = import.meta.env.DEV ? 'http://localhost:4000' : '';
+const devFallback = import.meta.env.DEV ? 'https://plinko-game-e9yd.onrender.com' : '';
 const API_BASE = (
   import.meta.env.VITE_API_URL ||
   devFallback
