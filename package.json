@@ -1,0 +1,29 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "description": "Provably-fair Plinko game full-stack app",
+  "keywords": [
+    "plinko",
+    "provably-fair",
+    "crypto"
+  ],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

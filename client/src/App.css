@@ -1,0 +1,84 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem clamp(1rem, 4vw, 4rem) 2rem;
+  gap: 1rem;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.brand-tagline {
+  font-size: 0.8rem;
+  margin: 0;
+  color: var(--fg-muted);
+}
+
+.logo-dot {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9d4dfc, #28e1ff);
+  box-shadow: 0 0 18px rgba(149, 92, 255, 0.5);
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: var(--fg-muted);
+}
+
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--fg);
+}
+
+.app-main {
+  flex: 1;
+}
+
+.app-footer {
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.app-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+  }
+}
